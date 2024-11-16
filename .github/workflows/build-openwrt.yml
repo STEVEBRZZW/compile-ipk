@@ -114,7 +114,7 @@ jobs:
       with:
         files: firmware/*
         name: ${{ steps.set_target.outputs.TARGET_DASH }}-${{ github.event.inputs.firmware_version }}-${{ env.PLUGIN_NAME }}-${{ env.PLUGIN_VERSION }}
-        tag_name: v${{ github.event.inputs.firmware_version }}-${{ env.PLUGIN_NAME }}-${{ env.PLUGIN_VERSION }}
+        tag_name: 1
         body: |
           目标平台/架构: ${{ github.event.inputs.target }}
           固件版本: ${{ github.event.inputs.firmware_version }}
